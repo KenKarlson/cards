@@ -1,0 +1,50 @@
+.container
+  width: 100%
+  margin:  0
+  display: flex
+  justify-content: center
+  align-items: center
+  color:#fff
+  overflow: hidden
+  .slide
+    position: relative
+    height: 80vh
+    border-radius: 15px
+    margin: 10px
+    cursor: pointer
+    flex: 1
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    color: white
+    transition: all 500ms ease-in-out
+    &__tesla
+      background-image: url(/assets/img/tesla.webp)
+    &__camaro
+      background-image: url(/assets/img/camaro.webp)
+    &__ferrari
+      background-image: url(/assets/img/ferrari.webp)
+    &__jdm
+      background-image: url(/assets/img/jdm.webp)
+    &__porsh
+      background-image: url(/assets/img/porsh.webp)
+    &__audi
+      background-image: url(/assets/img/audi.webp)
+    &__sport
+      background-image: url(/assets/img/camaro-mu.webp)
+    &__porhsport
+      background-image: url(/assets/img/porsh-sport.webp)
+    
+    h3
+      position: absolute
+      font-size: 24px
+      bottom: 20px
+      left: 20px
+      margin: 0
+      opacity: 0
+    &.active
+      flex: 10
+      h3
+        opacity: 1
+        transition: opacity 0.3s ease-in 0.4s
+
